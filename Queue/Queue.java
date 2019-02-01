@@ -2,15 +2,23 @@ import java.util.*;
 
 public class Queue {
 	private LinkedList<String> myList;
-	private int size;
+	private int qSize;
 	
 	public Queue(int size) {
 		myList = new LinkedList<String>();
-		this.size = size;
+		this.qSize = size;
+	}
+	
+	public boolean empty() {
+		if(myList.size() == 0) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	public boolean add(String s) {
-		if(size <= myList.size()) {
+		if(qSize <= myList.size()) {
 			System.out.println("size ÃÊ°ú");
 			return false;
 		}else {

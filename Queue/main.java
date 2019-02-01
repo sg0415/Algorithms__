@@ -5,6 +5,8 @@ public class main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Queue q = new Queue(7);
+		
+		System.out.println(q.empty());
 		q.add("D");
 		q.add("A");
 		q.add("N");
@@ -26,6 +28,7 @@ public class main {
 		q.add("¢½");
 		q.printStack();
 
+		System.out.println(q.empty());
 
 	}
 
