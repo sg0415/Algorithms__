@@ -22,16 +22,16 @@ public class B1158 {
 		count = M-1;
 		num = 0;
 
-		System.out.print("<");
 		while(!list.isEmpty()) {
 			J[num++] = list.remove(count);
-			System.out.print(list.remove(count)+", ");
 			
 			count += (M-1);
 			
 			if(count >= list.size() && list.size()!=0) {
 				count %= list.size();
 			}
+
+
 		}
 		System.out.print("<");
 		for (int i = 0; i < N-1; i++) {
