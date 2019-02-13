@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class B13023 {
+public class B1707 {
 	static int K, V, E;
 	static ArrayList<Integer> con[];
 	static int visit[];
